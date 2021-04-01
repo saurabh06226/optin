@@ -16,6 +16,8 @@ use App\Http\Controllers\HomeController;
 
 Route::get('/', [HomeController::class, 'index']);
 
+Route::post('sendmail', [HomeController::class, 'sendMail']);
+
 Route::get('/pre', function () {
     return view('welcome');
 });
