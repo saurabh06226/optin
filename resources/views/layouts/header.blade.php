@@ -168,7 +168,7 @@
 										</span>
 										<span class="mobile-label">English</span>
 										<li class="gds-submenu-item"><a class="gds-link gds-link--link-intercept gds-link--logo" href="{{URL::to('/')}}" title="English" aria-label="" tabindex="" target=""><span class="gds-link__label">English</span></a></li>
-										<li class="gds-submenu-item"><a class="gds-link gds-link--link-intercept gds-link--logo" href="#" title="French" aria-label="" tabindex="" target=""><span class="gds-link__label">French</span></a></li>
+										<li class="gds-submenu-item"><a class="gds-link gds-link--link-intercept gds-link--logo" href="{{ config('constants.lang-fr') }}" title="French" aria-label="" tabindex="" target=""><span class="gds-link__label">French</span></a></li>
 									</ul>
 								</div>
 								<button id="mobilemenutoggle" class="mobileutilityitem breakpoint-l-max" aria-label="Main Menu">
