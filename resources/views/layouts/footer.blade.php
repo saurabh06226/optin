@@ -14,10 +14,8 @@
                         <div class="gds-footer__legal-links gds-footer__align-center">
                             <nav aria-label="Legal navigation" class="gds-menus">
                                 <ul class="gds-inline-menu gds-inline-menu-- gds-inline-menu--size-p gds-inline-menu--spacer-m">
-                                    <li class="gds-inline-menu__item padding-right-20-px"> <a class="gds-link gds-link--link-intercept gds-link--menu" href="#" title="Privacy notice" aria-label="Privacy notice" tabindex="" target=""><span
-                                                class="gds-link__label">Terms of Use</span></a> </li>
-                                    <li class="gds-inline-menu__item padding-right-20-px"> <a class="gds-link gds-link--link-intercept gds-link--menu" href="terms-of-use.html" title="Terms of use" aria-label="Terms of use" tabindex="" target=""><span class="gds-link__label">Privacy Policy
-                                            </span></a> </li>
+                                    <li class="gds-inline-menu__item padding-right-20-px"> <a class="gds-link gds-link--link-intercept gds-link--menu" href="{{URL::to('/terms-of-use')}}" title="Terms of use" aria-label="Terms of use" tabindex="" target=""><span class="gds-link__label">Terms of Use</span></a> </li>
+                                    <li class="gds-inline-menu__item padding-right-20-px"> <a class="gds-link gds-link--link-intercept gds-link--menu" href="#" title="Privacy notice" aria-label="Privacy notice" tabindex="" target=""><span class="gds-link__label"></span>Privacy Policy</a> </li>
                                 </ul>
                             </nav>
                         </div>

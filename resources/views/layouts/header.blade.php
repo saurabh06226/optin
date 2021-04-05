@@ -6,13 +6,22 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="_token" content="{!! csrf_token() !!}" />
 	<title>Document</title>
 	<link rel="preload" as="font" media="all" href="{{ asset('public/css/fonts/BIAntiquaIIMl-Bold.woff2') }}" type="font/woff2" crossorigin async />
 	<link rel="preload" as="font" media="all" href="{{ asset('public/css/fonts/BIAntiquaIIMl-Regular.woff2') }}" type="font/woff2" crossorigin async />
 	<link rel="preload" as="font" media="all" href="{{ asset('public/css/fonts/BISansNEXT-Bold.woff2') }}" type="font/woff2" crossorigin async />
 	<link rel="preload" as="font" media="all" href="{{ asset('public/css/fonts/BISansNEXT-Regular.woff2') }}" type="font/woff2" crossorigin async />
 	<link rel="stylesheet" href="{{ asset('public/css/gds-template.min.css') }}">
-	<link rel="stylesheet" href="{{ asset('public/css/custom.min.css') }}"> </head>
+	<link rel="stylesheet" href="{{ asset('public/css/custom.min.css') }}">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="theme-color" content="#ffffff">
+</head>
 
 <body>
 	<!--  ------------------------------------ HEADER------------------------------------------- -->
@@ -58,24 +67,21 @@
 																	</path>
 																</svg></span></span>
 													</button>
-													<ul id="dropDownMenu-1617014151-1706179577" class="gds-submenu-items gds-submenu-items--right"><span class="mobile-back"><span
-																class="gds-icon gds-icon--primary gds-icon--xs gds-icon--base_chevron-left"><svg
-																	xmlns="http://www.w3.org/2000/svg"
-																	viewBox="0 0 12 12">
+													<ul id="tab-lang-dropdown" class="gds-submenu-items gds-submenu-items--left tab-dropdown-lang display-none">
+														<span class="mobile-back">
+															<span
+																class="gds-icon gds-icon--primary gds-icon--xs gds-icon--base_chevron-left">
+																<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12">
 																	<path
 																		d="M5.303.23c.305-.306.8-.306 1.107 0 .277.277.303.712.075 1.018l-.075.088L1.745 6l4.665 4.664c.277.278.303.713.075 1.019l-.075.088c-.278.278-.713.303-1.02.076l-.087-.076L.332 6.8C.119 6.588 0 6.3 0 6c0-.257.088-.505.246-.704l.085-.095L5.303.229z">
 																	</path>
-																</svg></span> Back </span><span class="mobile-label">English</span>
-														<li class="gds-submenu-item"><a class="gds-link gds-link--link-intercept gds-link--logo" href="#" title="" aria-label="" tabindex="" target=""><span
-																	class="gds-link__label">English</span></a></li>
-														<li class="gds-submenu-item"><a class="gds-link gds-link--link-intercept gds-link--logo" href="#" title="" aria-label="" tabindex="" target=""><span
-																	class="gds-link__label">French</span></a></li>
-														<li class="gds-submenu-item"><a class="gds-link gds-link--link-intercept gds-link--logo" href="#" title="" aria-label="" tabindex="" target=""><span
-																	class="gds-link__label">German</span></a></li>
-														<li class="gds-submenu-item"><a class="gds-link gds-link--link-intercept gds-link--logo" href="#" title="" aria-label="" tabindex="" target=""><span
-																	class="gds-link__label">Italian</span></a></li>
-														<li class="gds-submenu-item"><a class="gds-link gds-link--link-intercept gds-link--logo" href="#" title="" aria-label="" tabindex="" target=""><span
-																	class="gds-link__label">Spanish</span></a></li>
+																</svg>
+															</span>
+															Back
+														</span>
+														<span class="mobile-label">English</span>
+														<li class="gds-submenu-item"><a class="gds-link gds-link--link-intercept gds-link--logo" href="#" title="" aria-label="" tabindex="" target=""><span class="gds-link__label">English</span></a></li>
+														<li class="gds-submenu-item"><a class="gds-link gds-link--link-intercept gds-link--logo" href="#" title="" aria-label="" tabindex="" target=""><span class="gds-link__label">French</span></a></li>
 													</ul>
 												</div>
 											</div>
@@ -91,9 +97,9 @@
 						<div class="gds-cell gds-cell--spacer-m gds-cell--content">
 							<div class="gds-header__main">
 								<div class="logo-holder">
-									<a class="gds-logo" href="#" target="_parent">
+									<a class="gds-logo" href="{{URL::to('/')}}" target="_parent">
 										<div class="gds-image gds-image--spacer-none">
-											<picture> <img src="img/logo-primary.png" alt="logo-red-de-referencia" loading="lazy" class=" ls-is-cached lazyloaded" title="red-de-referencia"> </picture>
+											<img src="img/logo-primary.png" alt="logo-red-de-referencia" width="160" height="80" loading="lazy" class=" ls-is-cached lazyloaded" title="red-de-referencia">
 										</div> <span aria-hidden="true">Red de Referencia</span> </a>
 								</div>
 							</div>

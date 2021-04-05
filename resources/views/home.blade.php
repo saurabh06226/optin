@@ -1,34 +1,38 @@
 @include('layouts.header')
 <!-- ---------------------------------------------BANNER---------------------------------- -->
 <div id="banner" class="gds-hero gds-hero--spacer-l">
-	<div class="gds-hero__full-background gds-hero__full-background--primary-dark">
-		<div class="gds-hero__overlay gds-hero__overlay--primary-dark"></div>
-		<div class="gds-grid gds-grid--none ">
-			<div class="gds-cell gds-cell--l-half gds-cell--s-order-2 gds-cell--l-order-1 gds-cell--spacer-m gds-cell--content">
-				<div class="gds-hero__content gds-hero__content--">
-					<div class="gds-hero__content-inner gds-hero__content-inner--has-product-image">
-						<h1 class="gds-heading gds-heading--align-left gds-heading--contrast gds-heading--l">
-							Stay up to date by signing up
-							for our mailing list
-						</h1>
-						<p class="gds-paragraph gds-paragraph--l gds-paragraph--align-left gds-paragraph--contrast gds-paragraph--spacer-l"> Please complete the following request form to receive email communications from Boehringer Ingelheim containing the latest information about our products, medicines and services.</p>
-						<p class="gds-paragraph gds-paragraph--l gds-paragraph--align-left gds-paragraph--contrast gds-paragraph--spacer-l"> We will use your full name and professional details, including your office address, to help validate you against our records. </p>
-					</div>
-				</div>
-			</div>
-			<div class="gds-cell gds-cell--l-half gds-cell--s-order-1 gds-cell--l-order-2 gds-cell--spacer-m gds-cell--content gds-right-10-px">
-				<div class="gds-hero__background-image">
-					<div class="gds-image gds-image--spacer-none">
-						<picture>
-							<source media="(max-width: 991px)" srcset="img/homepage-banner-image.webp" type="image/webp">
-							<source srcset="img/homepage-banner-image.jpg" type="image/jpg">
-							<img src="img/homepage-banner-image.jpg" alt="Conozca nuestra Red de Referencia" loading="lazy" class=" ls-is-cached lazyloaded" title="Conozca nuestra Red de Referencia">
-						</picture>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+    <div class="gds-hero__full-background gds-hero__full-background--primary-dark">
+        <div class="gds-hero__overlay gds-hero__overlay--primary-dark"></div>
+        <div class="gds-grid gds-grid--none ">
+            <div class="gds-cell gds-cell--l-three-quarters gds-cell--s-order-2 gds-cell--l-order-1 gds-cell--spacer-m gds-cell--content">
+                <div class="gds-hero__content gds-hero__content--">
+                    <div class="gds-hero__content-inner gds-hero__content-inner--has-product-image">
+                        <h1 class="gds-heading gds-heading--align-left gds-heading--contrast gds-heading--l">
+                            Stay up to date by signing up
+                            for our mailing list
+                        </h1>
+                        <p class="gds-paragraph gds-paragraph--l gds-paragraph--align-left gds-paragraph--contrast gds-paragraph--spacer-l">
+                            Please complete the following request form to receive email communications from
+                            Boehringer Ingelheim containing the latest information about our products, medicines and
+                            services.</p>
+                        <p class="gds-paragraph gds-paragraph--l gds-paragraph--align-left gds-paragraph--contrast gds-paragraph--spacer-l">
+                            We will use your full name and professional details, including your office address, to
+                            help validate you against our records. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="gds-cell gds-cell--l-quarter gds-cell--s-order-1 gds-cell--l-order-2 gds-cell--spacer-m gds-cell--content gds-right-10-px">
+                <div class="gds-hero__background-image">
+                    <div class="gds-image gds-image--spacer-none">
+                        <picture>
+                            <source media="(max-width: 991px)" srcset="img/homepage-banner-image.webp" type="image/webp">
+                            <source srcset="img/homepage-banner-image.jpg"  width="576" height="328" type="image/jpg"> <img src="img/homepage-banner-image.jpg" alt="Stay up to date by signing up for our mailing list" loading="lazy" class=" ls-is-cached lazyloaded" title="Stay up to date by signing up for our mailing list"> 
+                        </picture>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 <!-- ---------------------------------------------MAIN CONTENT---------------------------------- -->
 <form role="form" method="POST" id="contactForm" action="sendmail" >
@@ -229,7 +233,7 @@
                             <select class="{{ $errors->has('province') ? 'gds-form-input__input--is-error error-province' : '' }} gds-form-input__input gds-form-input__input--select gds-form-input__input--has-icon" id="province" name="province" placeholder="Placeholder text" value="">
                                 <option value="" disabled="" selected="" hidden="">Province or territory</option>
                                 <option value="Alberta">Alberta</option>
-                                <option value="British Columbia">British Columbia/option>
+                                <option value="British Columbia">British Columbia</option>
                                 <option value="Manitoba">Manitoba</option>
                                 <option value="New Brunswick">New Brunswick</option>
                                 <option value="Newfoundland and Labrador">Newfoundland and Labrador</option>
