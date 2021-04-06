@@ -26,7 +26,7 @@
                     <div class="gds-image gds-image--spacer-none">
                         <picture>
                             <source media="(max-width: 991px)" srcset="img/homepage-banner-image.webp" type="image/webp">
-                            <source srcset="img/homepage-banner-image.jpg"  width="576" height="328" type="image/jpg"> <img src="img/homepage-banner-image.jpg" alt="Stay up to date by signing up for our mailing list" loading="lazy" class=" ls-is-cached lazyloaded" title="Stay up to date by signing up for our mailing list"> 
+                            <source srcset="img/homepage-banner-image.jpg"  width="576" height="328" type="image/jpg"> <img src="img/homepage-banner-image.jpg" alt="Patient and healthcare professional" title="Patient and healthcare professional" loading="lazy" class=" ls-is-cached lazyloaded"> 
                         </picture>
                     </div>
                 </div>
