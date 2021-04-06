@@ -65,12 +65,12 @@
                             </span></label>
                         </div>
                         <div class="gds-form-input__input-wrapper gds-form-input__input-wrapper--select" id="salutation--input-wrapper">
-                            <select class="{{ $errors->has('salutation') ? 'gds-form-input__input--is-error error-salutation' : '' }} gds-form-input__input gds-form-input__input--select gds-form-input__input--has-icon" id="salutation" name="salutation" placeholder="Placeholder text" value="">
+                            <select class="{{ $errors->has('salutation') ? 'gds-form-input__input--is-error error-salutation' : '' }} gds-form-input__input gds-form-input__input--select gds-form-input__input--has-icon" id="salutation" name="salutation">
                                 <option value="" disabled="" selected="" hidden="">Select</option>
-                                <option value="Dr.">Dr.</option>
-                                <option value="Mr.">Mr.</option>
-                                <option value="Mrs.">Mrs.</option>
-                                <option value="Ms.">Ms.</option>
+                                <option value="Dr." @if(old('salutation') == "Dr.") selected @endif >Dr.</option>
+                                <option value="Mr." @if(old('salutation') == "Mr.") selected @endif >Mr.</option>
+                                <option value="Mrs." @if(old('salutation') == "Mrs.") selected @endif >Mrs.</option>
+                                <option value="Ms." @if(old('salutation') == "Ms.") selected @endif >Ms.</option>
                             </select>
                             <div class="gds-form-input__icon-container gds-form-input__icon-container--chevron">
                                 <span class="gds-icon gds-icon--primary gds-icon--m gds-icon--base_chevron-down">
@@ -112,7 +112,7 @@
                             </label>
                         </div>
                         <div class="gds-form-input__input-wrapper gds-form-input__input-wrapper--text" id="first-name--input-wrapper">
-                            <input type="text" class="{{ $errors->has('first_name') ? 'gds-form-input__input--is-error error-first-name' : '' }} gds-form-input__input gds-form-input__input--text" id="first-name" name="first_name" placeholder="Placeholder text" value=" ">
+                            <input type="text" class="{{ $errors->has('first_name') ? 'gds-form-input__input--is-error error-first-name' : '' }} gds-form-input__input gds-form-input__input--text" id="first-name" name="first_name" placeholder="First Name" value="{{ old('first_name') }}">
                         </div>
                     </div>
                     @if ($errors->has('first_name'))
@@ -134,7 +134,7 @@
                             </label>
                         </div>
                         <div class="gds-form-input__input-wrapper gds-form-input__input-wrapper--text" id="last-name--input-wrapper">
-                            <input type="text" class="{{ $errors->has('last_name') ? 'gds-form-input__input--is-error error-last-name' : '' }} gds-form-input__input gds-form-input__input--text" id="last-name" name="last_name" placeholder="Placeholder text" value=" ">
+                            <input type="text" class="{{ $errors->has('last_name') ? 'gds-form-input__input--is-error error-last-name' : '' }} gds-form-input__input gds-form-input__input--text" id="last-name" name="last_name" placeholder="Last Name" value="{{ old('last_name') }}">
                         </div>
                     </div>
                     @if ($errors->has('last_name'))
@@ -156,7 +156,7 @@
                             </label>
                         </div>
                         <div class="gds-form-input__input-wrapper gds-form-input__input-wrapper--text" id="office-address-1--input-wrapper">
-                            <input type="text" class="{{ $errors->has('office_address_1') ? 'gds-form-input__input--is-error error-office-address-1' : '' }} gds-form-input__input gds-form-input__input--text" id="office-address-1" name="office_address_1" placeholder="Placeholder text" value=" ">
+                            <input type="text" class="{{ $errors->has('office_address_1') ? 'gds-form-input__input--is-error error-office-address-1' : '' }} gds-form-input__input gds-form-input__input--text" id="office-address-1" name="office_address_1" placeholder="Office address 1" value="{{ old('office_address_1') }}">
                         </div>
                     </div>
                     @if ($errors->has('office_address_1'))
@@ -178,7 +178,7 @@
                             </span></label>
                         </div>
                         <div class="gds-form-input__input-wrapper gds-form-input__input-wrapper--text" id="office-address-2--input-wrapper">
-                            <input type="text" class="{{ $errors->has('office_address_2') ? 'gds-form-input__input--is-error error-office-address-2' : '' }} gds-form-input__input gds-form-input__input--text" id="office-address-2" name="office_address_2" placeholder="Placeholder text" value=" ">
+                            <input type="text" class="{{ $errors->has('office_address_2') ? 'gds-form-input__input--is-error error-office-address-2' : '' }} gds-form-input__input gds-form-input__input--text" id="office-address-2" name="office_address_2" placeholder="Office address 2" value="{{ old('office_address_2') }}">
                         </div>
                     </div>
                     <div class="gds-form-input__validation-message gds-form-input__validation-message-- gds-form-input__validation-message-- gds-form-input__validation-message--is-hidden">
@@ -208,7 +208,7 @@
                             </span></label>
                         </div>
                         <div class="gds-form-input__input-wrapper gds-form-input__input-wrapper--text" id="city--input-wrapper">
-                            <input type="text" class="{{ $errors->has('city') ? 'gds-form-input__input--is-error error-city' : '' }} gds-form-input__input gds-form-input__input--text" id="city" name="city" placeholder="Placeholder text" value=" ">
+                            <input type="text" class="{{ $errors->has('city') ? 'gds-form-input__input--is-error error-city' : '' }} gds-form-input__input gds-form-input__input--text" id="city" name="city" placeholder="City" value="{{ old('city') }}">
                         </div>
                     </div>
                     @if ($errors->has('city'))
@@ -230,21 +230,21 @@
                             </span></label>
                         </div>
                         <div class="gds-form-input__input-wrapper gds-form-input__input-wrapper--select" id="province--input-wrapper">
-                            <select class="{{ $errors->has('province') ? 'gds-form-input__input--is-error error-province' : '' }} gds-form-input__input gds-form-input__input--select gds-form-input__input--has-icon" id="province" name="province" placeholder="Placeholder text" value="">
+                            <select class="{{ $errors->has('province') ? 'gds-form-input__input--is-error error-province' : '' }} gds-form-input__input gds-form-input__input--select gds-form-input__input--has-icon" id="province" name="province">
                                 <option value="" disabled="" selected="" hidden="">Province or territory</option>
-                                <option value="Alberta">Alberta</option>
-                                <option value="British Columbia">British Columbia</option>
-                                <option value="Manitoba">Manitoba</option>
-                                <option value="New Brunswick">New Brunswick</option>
-                                <option value="Newfoundland and Labrador">Newfoundland and Labrador</option>
-                                <option value="Northwest Territories">Northwest Territories</option>
-                                <option value="Nova Scotia">Nova Scotia</option>
-                                <option value="Nunavut">Nunavut</option>
-                                <option value="Ontario">Ontario</option>
-                                <option value="Prince Edward Island">Prince Edward Island</option>
-                                <option value="Quebec">Quebec</option>
-                                <option value="Saskatchewan">Saskatchewan</option>
-                                <option value="Yukon">Yukon</option>
+                                <option value="Alberta" @if(old('province') == "Alberta") selected @endif >Alberta</option>
+                                <option value="British Columbia" @if(old('province') == "British Columbia") selected @endif >British Columbia</option>
+                                <option value="Manitoba" @if(old('province') == "Manitoba") selected @endif >Manitoba</option>
+                                <option value="New Brunswick" @if(old('province') == "New Brunswick") selected @endif >New Brunswick</option>
+                                <option value="Newfoundland and Labrador" @if(old('province') == "Newfoundland and Labrador") selected @endif >Newfoundland and Labrador</option>
+                                <option value="Northwest Territories" @if(old('province') == "Northwest Territories") selected @endif >Northwest Territories</option>
+                                <option value="Nova Scotia" @if(old('province') == "Nova Scotia") selected @endif >Nova Scotia</option>
+                                <option value="Nunavut" @if(old('province') == "Nunavut") selected @endif >Nunavut</option>
+                                <option value="Ontario" @if(old('province') == "Ontario") selected @endif >Ontario</option>
+                                <option value="Prince Edward Island" @if(old('province') == "Prince Edward Island") selected @endif >Prince Edward Island</option>
+                                <option value="Quebec" @if(old('province') == "Quebec") selected @endif >Quebec</option>
+                                <option value="Saskatchewan" @if(old('province') == "Saskatchewan") selected @endif >Saskatchewan</option>
+                                <option value="Yukon" @if(old('province') == "Yukon") selected @endif >Yukon</option>
                             </select>
                             <div class="gds-form-input__icon-container gds-form-input__icon-container--chevron">
                                 <span class="gds-icon gds-icon--primary gds-icon--m gds-icon--base_chevron-down">
@@ -286,7 +286,7 @@
                             </span></label>
                         </div>
                         <div class="gds-form-input__input-wrapper gds-form-input__input-wrapper--text" id="postal-code--input-wrapper">
-                            <input type="text" class="{{ $errors->has('postal_code') ? 'gds-form-input__input--is-error error-postal_code' : '' }} gds-form-input__input gds-form-input__input--text" id="postal-code" name="postal_code" placeholder="Ex. A1A 2B2 " value="">
+                            <input type="text" class="{{ $errors->has('postal_code') ? 'gds-form-input__input--is-error error-postal_code' : '' }} gds-form-input__input gds-form-input__input--text" id="postal-code" name="postal_code" placeholder="Ex. A1A 2B2 " value="{{ old('postal_code') }}">
                         </div>
                     </div>
                     @if ($errors->has('postal_code'))
@@ -307,7 +307,7 @@
                             </span></label>
                         </div>
                         <div class="gds-form-input__input-wrapper gds-form-input__input-wrapper--text" id="speciality--input-wrapper">
-                            <input type="text" class="{{ $errors->has('speciality') ? 'gds-form-input__input--is-error error-speciality' : '' }} gds-form-input__input gds-form-input__input--text" id="speciality" name="speciality" placeholder="Placeholder text" value=" ">
+                            <input type="text" class="{{ $errors->has('speciality') ? 'gds-form-input__input--is-error error-speciality' : '' }} gds-form-input__input gds-form-input__input--text" id="speciality" name="speciality" placeholder="Specialty" value="{{ old('speciality') }}">
                         </div>
                     </div>
                     <div class="gds-form-input__validation-message gds-form-input__validation-message-- gds-form-input__validation-message-- gds-form-input__validation-message--is-hidden">
@@ -339,7 +339,7 @@
                             </span></label>
                         </div>
                         <div class="gds-form-input__input-wrapper gds-form-input__input-wrapper--text" id="email--input-wrapper">
-                            <input type="text" class="{{ $errors->has('email') ? 'gds-form-input__input--is-error error-email' : '' }} gds-form-input__input gds-form-input__input--text" id="email" name="email" placeholder="Placeholder text" value=" ">
+                            <input type="text" class="{{ $errors->has('email') ? 'gds-form-input__input--is-error error-email' : '' }} gds-form-input__input gds-form-input__input--text" id="email" name="email" placeholder="Email Address" value="{{ old('email') }}">
                         </div>
                     </div>
                     @if ($errors->has('email'))
